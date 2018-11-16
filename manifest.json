@@ -1,0 +1,16 @@
+{
+  "description": "Redirects away from Wiley Online Library's epdf bullshit",
+  "manifest_version": 2,
+  "name": "Wiley epdf Redirect",
+  "version": "1.0",
+
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "https://onlinelibrary.wiley.com/"
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
