@@ -1,5 +1,5 @@
 {
-  "description": "Redirects away from Wiley Online Library's epdf bullshit",
+  "description": "Redirects away from Wiley Online Library's EPDF to normal PDF",
   "manifest_version": 2,
   "name": "Wiley epdf Redirect",
   "version": "1.0",

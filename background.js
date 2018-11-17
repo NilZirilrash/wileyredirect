@@ -16,4 +16,4 @@ browser.webRequest.onBeforeRequest.addListener(
 	{urls: ["https://onlinelibrary.wiley.com/doi/epdf/*"]},
 	["blocking"]
 );
-console.log("Wiley epdf redirecter successfully loaded.");
+console.log("Wiley EPDF redirecter successfully loaded.");
