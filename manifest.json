@@ -7,7 +7,8 @@
   "permissions": [
     "webRequest",
     "webRequestBlocking",
-    "https://onlinelibrary.wiley.com/"
+    "https://onlinelibrary.wiley.com/",
+    "https://*/onlinelibrary.wiley.com/"
   ],
 
   "background": {

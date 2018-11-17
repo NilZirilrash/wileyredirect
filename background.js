@@ -6,14 +6,16 @@ function redirect(requestDetails) {
 	console.log("Redirecting: \"" + requestDetails.url + "\" to sane PDF...");
 	return {
 		redirectUrl: requestDetails.url.replace(
-            /(https\:\/\/onlinelibrary\.wiley\.com\/doi\/)epdf(\/*)/,
+            /(.*onlinelibrary\.wiley\.com\/doi\/)epdf(\/*)/,
             "$1pdf$2")
 	};
 }
 
 browser.webRequest.onBeforeRequest.addListener(
 	redirect,
-	{urls: ["https://onlinelibrary.wiley.com/doi/epdf/*"]},
+	{urls: ["https://onlinelibrary.wiley.com/doi/epdf/*",
+          "https://*/onlinelibrary.wiley.com/doi/epdf/*",
+          "https://*.onlinelibrary.wiley.com/doi/epdf/*"]},
 	["blocking"]
 );
 console.log("Wiley EPDF redirecter successfully loaded.");
