@@ -1,7 +1,7 @@
 {
   "description": "Redirects away from Wiley Online Library's EPDF to normal PDF",
   "manifest_version": 2,
-  "name": "Wiley EPDF Redirect",
+  "name": "Wiley Online Library EPDF Redirect",
   "version": "1.0",
 
   "permissions": [
